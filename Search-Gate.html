@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Search-Gate</title>
+        <meta charset="UTF-8">
+        <style>
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: #393e46;
+}
+
+.main {
+    position: relative;
+}
+
+.u1 {
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+
+    font-size: 10vh;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #222831;
+}
+
+.u2 {
+    position: absolute;
+    left: 10vw;
+    top: 40vh;
+
+    font-size: 10vh;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #222831;
+}
+
+.u3 {
+    position: absolute;
+    left: 10vw;
+    top: 70vh;
+
+    font-size: 10vh;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #222831;
+}
+
+.form1 {
+    position: absolute;
+    left: 25vw;
+    top: 22vh;
+}
+
+.form2 {
+    position: absolute;
+    left: 25vw;
+    top: 52vh;
+}
+
+.form3 {
+    position: absolute;
+    left: 25vw;
+    top: 82vh;
+}
+
+.i {
+    width: 44vw;
+    background-color: #393e46;
+    border: 3px solid #222831;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 25px;
+    color: #eeeeee;
+
+    transition: 0.4s;
+}
+
+.i:hover {
+    border-color: #eeeeee;
+}
+
+.b {
+    margin-left: 1vw;
+    min-width: min-content;
+    
+    background-color: #393e46;
+    border: 3px solid #222831;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 25px;
+    color: #222831;
+
+    transition: 0.4s;
+}
+
+.b:hover {
+    color: #eeeeee;
+    border-color: #eeeeee;
+}
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <p class="u1">privat</p>
+            <p class="u2">grün</p>
+            <p class="u3">gut</p>
+            <div class="form1">
+                <form action="https://duckduckgo.com">
+                    <input class="i" type="search" name="q" placeholder="DuckDuckGo" autocorrect="off" autocomplete="off" autofocus="autofocus" required="required">
+                    <button class="b" type="submit">Suche</button>
+                </form>
+            </div>
+            <div class="form2">
+                <form action="https://www.ecosia.org/search" method="GET">
+                    <input class="i" type="search" name="q" placeholder="Ecosia" autocorrect="off" autocomplete="off" required="required">
+                    <button class="b" type="submit">Suche</button>
+                </form>
+            </div>
+            <div class="form3">
+                <form action="https://google.com/search" method="GET">
+                    <input class="i" type="search" name="q" placeholder="Google" autocorrect="off" autocomplete="off" maxlength="2048" required="required">
+                    <button class="b" type="submit">Suche</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
